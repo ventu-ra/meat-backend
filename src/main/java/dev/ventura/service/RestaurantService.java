@@ -2,6 +2,7 @@ package dev.ventura.service;
 
 import java.util.List;
 
+import dev.ventura.dto.RestaurantDTO;
 import dev.ventura.entity.RestaurantEntity;
 import dev.ventura.repository.RestaurantRepository;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -17,13 +18,12 @@ public class RestaurantService {
     this.restaurantRepository = repo;
   }
 
-  public List<RestaurantEntity> list() {
-    return restaurantRepository.findAll().list();
+  public List<RestaurantDTO> listAll() {
+    return restaurantRepository.listAllDto();
   }
 
-  public List<RestaurantEntity> create(RestaurantEntity restaurant) {
+  public List<RestaurantDTO> create(RestaurantEntity restaurant) {
     restaurantRepository.persist(restaurant);
-
-    return list();
+    return listAll();
   }
 }
