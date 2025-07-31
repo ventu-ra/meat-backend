@@ -1,8 +1,5 @@
 package dev.ventura.resource;
 
-import java.util.List;
-
-import dev.ventura.dto.RestaurantDTO;
 import dev.ventura.entity.RestaurantEntity;
 import dev.ventura.service.RestaurantService;
 import jakarta.transaction.Transactional;
