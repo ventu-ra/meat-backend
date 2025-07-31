@@ -5,7 +5,6 @@ import java.util.List;
 import dev.ventura.dto.RestaurantDTO;
 import dev.ventura.entity.RestaurantEntity;
 import dev.ventura.service.RestaurantService;
-// import io.smallrye.openapi.internal.models.media.MediaType;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
