@@ -41,6 +41,17 @@ public class RestaurantEntity extends PanacheEntityBase {
     return name;
   }
 
+  public RestaurantEntity(String name, String category, String deliveryEstimate, double rating, String imagePath,
+      String about, String hours) {
+    this.name = name;
+    this.category = category;
+    this.deliveryEstimate = deliveryEstimate;
+    this.rating = rating;
+    this.imagePath = imagePath;
+    this.about = about;
+    this.hours = hours;
+  }
+
   public void setName(String name) {
     this.name = name;
   }
@@ -91,6 +102,14 @@ public class RestaurantEntity extends PanacheEntityBase {
 
   public void setHours(String hours) {
     this.hours = hours;
+  }
+
+  public Long getId() {
+    return id;
+  }
+
+  public void setId(Long id) {
+    this.id = id;
   }
 
 }
