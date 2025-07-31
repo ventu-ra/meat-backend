@@ -1,4 +1,4 @@
-package dev.ventura;
+package dev.ventura.restaurant;
 
 import io.quarkus.test.junit.QuarkusTest;
 
