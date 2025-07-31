@@ -14,102 +14,24 @@ public class RestaurantEntity extends PanacheEntityBase {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-  private String name;
+  public Long id;
+  public String name;
 
   @Column(name = "category")
-  private String category;
+  public String category;
 
   @Column(name = "delivery_estimate")
-  private String deliveryEstimate;
+  public String deliveryEstimate;
 
   @Column(name = "rating")
-  private double rating;
+  public double rating;
 
   @Column(name = "image_path")
-  private String imagePath;
+  public String imagePath;
   @Column(length = 255)
-  private String about;
+  public String about;
 
   @Column(name = "hours")
-  private String hours;
-
-  public RestaurantEntity() {
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public RestaurantEntity(String name, String category, String deliveryEstimate, double rating, String imagePath,
-      String about, String hours) {
-    this.name = name;
-    this.category = category;
-    this.deliveryEstimate = deliveryEstimate;
-    this.rating = rating;
-    this.imagePath = imagePath;
-    this.about = about;
-    this.hours = hours;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public String getCategory() {
-    return category;
-  }
-
-  public void setCategory(String category) {
-    this.category = category;
-  }
-
-  public String getDeliveryEstimate() {
-    return deliveryEstimate;
-  }
-
-  public void setDeliveryEstimate(String deliveryEstimate) {
-    this.deliveryEstimate = deliveryEstimate;
-  }
-
-  public double getRating() {
-    return rating;
-  }
-
-  public void setRating(double rating) {
-    this.rating = rating;
-  }
-
-  public String getImagePath() {
-    return imagePath;
-  }
-
-  public void setImagePath(String imagePath) {
-    this.imagePath = imagePath;
-  }
-
-  public String getAbout() {
-    return about;
-  }
-
-  public void setAbout(String about) {
-    this.about = about;
-  }
-
-  public String getHours() {
-    return hours;
-  }
-
-  public void setHours(String hours) {
-    this.hours = hours;
-  }
-
-  public Long getId() {
-    return id;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
-  }
+  public String hours;
 
 }
